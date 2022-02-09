@@ -33,6 +33,7 @@ def help_menu(**args):
 
     if cfg.operation is None:
         print(f"Usage: {cfg.application_name} [command] [packages/options]")
+        print(f"       {cfg.application_name} [command] --help")
         print()
         print("Commands:")
         _print_formatted_args(cfg.available_commands)
